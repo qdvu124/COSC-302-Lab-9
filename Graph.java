@@ -52,7 +52,7 @@ class Graph
 		  iter = adjList[current].iterator();
 		  while(iter.hasNext()) {
 			next = iter.next();
-			// Only if the neighbor has not been visited or if the neighbor is not yet in the queue
+			// Only if the neighbor has not been visited and if the neighbor is not yet in the queue
 			if(visited.contains(next) || queue.contains(next))
 			  continue;
 			queue.add(next);
